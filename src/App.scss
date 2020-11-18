@@ -1,5 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.App {
+  position: relative;
+  max-width: 480px;
+}
+
+// Navbar
+
+.navbar-section {
+  position: absolute;
+  top: 5;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .navbar-text {
+    color: yellow;
+  }
+}
+
+.navbar-toggler-icon {
+  color: yellow;
+
+  // background: yellow;
+}
+
+.container ul {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  li {
+    padding: 3px;
+  }
+}
+// End of Navbar
+
+.intro-section {
+  position: relative;
+  height: 100vh;
+  max-width: 480px;
+  background-image: linear-gradient(
+      to top,
+      rgba(46, 46, 46, 0.7),
+      rgba(12, 15, 32, 0.7)
+    ),
+    url("./img/black-flies.jfif");
+  background-repeat: no-repeat;
+  background-size: 480px cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    background: rgba(233, 232, 232, 0.9);
+    padding: 5px;
+    text-align: center;
+    width: 90%;
+    font-size: 18px;
+    color: rgb(37, 37, 37);
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 50px;
+  }
+  h1 {
+    text-align: center;
+    color: rgb(233, 232, 232);
+    font-family: "Oswald", sans-serif;
+  }
+  h3 {
+    text-align: center;
+    color: rgb(233, 232, 232);
+    font-family: "Oswald", sans-serif;
+  }
+  .join-button {
+    margin-top: 50px;
+    width: 70vw;
+    height: 50px;
+  }
 }
