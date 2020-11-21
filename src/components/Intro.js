@@ -1,17 +1,19 @@
 import React from "react";
+import instaLogo from "../img/icons/insta-logo.svg";
 
 export default function Intro() {
   return (
     <div className="intro-section">
       <h2 className="course-label">
-        Авторский курс по анимациям от @best_author
+        Авторский курс по созданию рекламных макетов и анимации от @sm.sahara и
+        @ta.ariadna
       </h2>
       <h1>
-        Это лучший курс по анимациям. Если ты еще не с нами, тогда чего же ты
-        ждешь?
+        Заработок в Instagram на навыке создания рекламных макетов и stop-motion
+        . Если ты еще не с нами, тогда чего же ты ждешь?
       </h1>
-      <button type="button" class="join-button btn btn-warning">
-        Присоединится
+      <button type="button" className="join-button btn btn-warning">
+        ПРИСОЕДИНИТЬСЯ
       </button>
     </div>
   );

@@ -5,7 +5,7 @@ export default function Navbar() {
     <div className="navbar-section">
       <nav className="navbar navbar-dark bg-dark">
         <a className="navbar-brand" href="#">
-          {"Stop-motion & креативы"}
+          {"Stop-motion & Креативы"}
         </a>
         <button
           className="navbar-toggler"
@@ -34,7 +34,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item active">
                 <a className="nav-link" href="#">
-                  Команда <span className="sr-only">(current)</span>
+                  Эксперты <span className="sr-only">(current)</span>
                 </a>
               </li>
               <li className="nav-item active">
@@ -44,7 +44,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item active">
                 <a className="nav-link" href="#">
-                  Тарифы <span className="sr-only">(current)</span>
+                  Тарифы<span className="sr-only">(current)</span>
                 </a>
               </li>
               <li className="nav-item active">
