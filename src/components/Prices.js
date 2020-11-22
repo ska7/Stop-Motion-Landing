@@ -1,9 +1,11 @@
 import React from "react";
+import Timer from "./Timer";
 
 export default function Prices() {
   return (
     <div className="prices-section">
       <h1>Тарифы</h1>
+      <Timer />
 
       <div className="price-card">
         <div
