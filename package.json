@@ -9,12 +9,15 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
+    "lightslider": "^1.1.6",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-elastic-carousel": "^0.9.5",
     "react-scripts": "4.0.0",
     "react-scroll": "^1.8.1",
     "sass": "^1.29.0",
+    "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
