@@ -22,7 +22,11 @@ export default function Reviews() {
       </h1>
       <Carousel>
         {reviewsArray.map((review) => {
-          return <img className="review-picture" src={review}></img>;
+          return (
+            <div className="review-picture">
+              <img src={review}></img>
+            </div>
+          );
         })}
       </Carousel>
     </div>
