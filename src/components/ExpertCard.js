@@ -7,8 +7,8 @@ export default function ExpertCard({ picture, rank, name, bio }) {
       <div className="expert-card-info">
         <h2>{name}</h2>
         <h3>{rank}</h3>
-        {bio.map((item) => {
-          return <p>◌&nbsp;&nbsp;{`${item}`}</p>;
+        {bio.map((item, i) => {
+          return <p key={i}>◌&nbsp;&nbsp;{`${item}`}</p>;
         })}
       </div>
     </div>

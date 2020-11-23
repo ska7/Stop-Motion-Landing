@@ -21,7 +21,7 @@ export default function ProgramBlock({ icon, blockName, lessons }) {
         >
           {lessons.map((lesson, index) => {
             return (
-              <span data-aos="slide-up" className="lesson">
+              <span data-aos="slide-up" key={index} className="lesson">
                 <h2>{`Урок ${index + 1}`}</h2>
                 {blockName === "БЛОК 2: АНИМАЦИЯ" && index === 0 ? (
                   <React.Fragment>

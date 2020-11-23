@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PriceCard from "./PriceCard";
 import Timer from "./Timer";
 import Carousel from "react-elastic-carousel";
@@ -10,7 +10,6 @@ import {
   secondPart,
   secondTarrif,
   thirdTarrif,
-  ThirdTarrifSecondPart,
 } from "./tarrif-features";
 
 export default function Prices() {
@@ -24,10 +23,6 @@ export default function Prices() {
     alignItems: "center",
   };
 
-  const buttonStyle = {
-    border: "1px solid black",
-    width: "70%",
-  };
   return (
     <div className="prices-section">
       <h1 id="prices" style={{ marginTop: "35px" }}>
@@ -43,7 +38,7 @@ export default function Prices() {
             features={firstTarrif}
             id={1}
           />
-          <div classNames="yandex" style={center}>
+          <div className="yandex" style={center}>
             <Tooltip
               content={tooltip}
               background={"rgba(0,0,0, 0.9)"}
@@ -64,7 +59,8 @@ export default function Prices() {
               src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
-              frameborder="1"
+              title="yandex"
+              frameBorder="1"
               allowtransparency="false"
               scrolling="no"
             ></iframe>
@@ -73,7 +69,17 @@ export default function Prices() {
               src="https://yoomoney.ru/quickpay/button-widget?targets=первый тариф&default-sum=1290&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
-              frameborder="1"
+              title="yandex"
+              frameBorder="1"
+              allowtransparency="true"
+              scrolling="no"
+            ></iframe>
+            <h4>ЛИНКА ДЛЯ ТЕСТА</h4>
+            <iframe
+              src="https://yoomoney.ru/quickpay/button-widget?targets=проверка&default-sum=2&button-text=11&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410014822462996&"
+              width="184"
+              height="36"
+              frameBorder="0"
               allowtransparency="true"
               scrolling="no"
             ></iframe>
@@ -87,7 +93,7 @@ export default function Prices() {
             features={secondTarrif}
             id={2}
           />
-          <div classNames="yandex" style={center}>
+          <div className="yandex" style={center}>
             <Tooltip
               content={tooltip}
               background={"rgba(0,0,0, 0.9)"}
@@ -108,7 +114,8 @@ export default function Prices() {
               src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
-              rameborder="1"
+              title="yandex"
+              frameBorder="1"
               allowtransparency="true"
               scrolling="no"
             ></iframe>
@@ -117,7 +124,8 @@ export default function Prices() {
               src="https://yoomoney.ru/quickpay/button-widget?targets=первый тариф&default-sum=3990&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
-              rameborder="1"
+              title="yandex"
+              frameBorder="1"
               allowtransparency="true"
               scrolling="no"
             ></iframe>
@@ -133,7 +141,7 @@ export default function Prices() {
             mentor={true}
             id={3}
           />
-          <div classNames="yandex" style={center}>
+          <div className="yandex" style={center}>
             <Tooltip
               content={tooltip}
               background={"rgba(0,0,0, 0.9)"}
@@ -155,7 +163,8 @@ export default function Prices() {
               src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
-              rameborder="1"
+              frameBorder="1"
+              title="yandex"
               allowtransparency="true"
               scrolling="no"
             ></iframe>
@@ -164,7 +173,8 @@ export default function Prices() {
               src="https://yoomoney.ru/quickpay/button-widget?targets=первый тариф&default-sum=9990&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
-              rameborder="1"
+              frameBorder="1"
+              title="yandex"
               allowtransparency="true"
               scrolling="no"
             ></iframe>
@@ -179,7 +189,7 @@ export default function Prices() {
             id={4}
           />
 
-          <div classNames="yandex-buttons" style={center}>
+          <div className="yandex-buttons" style={center}>
             <Tooltip
               content={tooltip}
               background={"rgba(0,0,0, 0.9)"}
@@ -200,16 +210,18 @@ export default function Prices() {
               src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
-              rameborder="1"
+              frameBorder="1"
+              title="yandex"
               allowtransparency="true"
               scrolling="no"
             ></iframe>
             <h4>Оплатить полностью</h4>
             <iframe
-              src="https://yoomoney.ru/quickpay/button-widget?targets=четвертыц тариф индивид&default-sum=12500&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410014822462996&"
+              src="https://yoomoney.ru/quickpay/button-widget?targets=четвертый тариф индивид&default-sum=12500&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
-              rameborder="1"
+              frameBorder="1"
+              title="yandex"
               allowtransparency="true"
               scrolling="no"
             ></iframe>

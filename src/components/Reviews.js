@@ -21,10 +21,10 @@ export default function Reviews() {
         МАКЕТАХ
       </h1>
       <Carousel>
-        {reviewsArray.map((review) => {
+        {reviewsArray.map((review, i) => {
           return (
-            <div className="review-picture">
-              <img src={review}></img>
+            <div key={i} className="review-picture">
+              <img alt="review" src={review}></img>
             </div>
           );
         })}
