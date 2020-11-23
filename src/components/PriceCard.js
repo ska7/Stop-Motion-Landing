@@ -16,6 +16,7 @@ export default function PriceCard({
   };
   const h1Style = {
     background: "rgb(255, 193, 7)",
+    boxShadow: "0px 0px 10px black",
     borderRadius: "15px",
     color: "black",
     marginBottom: "20px",

@@ -8,7 +8,7 @@ import ExpertCard from "./ExpertCard";
 export default function Experts() {
   return (
     <div className="experts-section">
-      <h1>ЗНАКОМЬСЯ, ЭКСПЕРТКИ КУРСА</h1>
+      <h1 id="experts">ЗНАКОМЬСЯ, ЭКСПЕРТКИ КУРСА</h1>
       <ExpertCard
         picture={saharaPic}
         name={"Саша @sm.sahara "}
@@ -23,7 +23,7 @@ export default function Experts() {
 
       <ExpertCard
         picture={arinaPic}
-        rank={`Cпециалист в сфере коллажной анимации`}
+        rank={`Cпециалистка в сфере коллажной анимации`}
         name={"Арина"}
         bio={[
           `Создает анимации для брендов`,

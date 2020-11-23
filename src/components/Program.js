@@ -13,7 +13,7 @@ import ProgramBlock from "./ProgramBlock";
 
 export default function Program() {
   return (
-    <div className="program-section">
+    <div id="program" className="program-section">
       <h1>Программа</h1>
       <ProgramBlock
         icon={layout}

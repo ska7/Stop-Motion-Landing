@@ -7,6 +7,7 @@ import CourseInfo from "./components/CourseInfo";
 import Program from "./components/Program";
 import Experts from "./components/Experts";
 import Prices from "./components/Prices";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <CourseInfo />
       <Program />
       <Experts />
+      <Reviews />
       <Prices />
     </div>
   );

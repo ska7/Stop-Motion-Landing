@@ -1,5 +1,5 @@
 import React from "react";
-import instaLogo from "../img/icons/insta-logo.svg";
+import { Link } from "react-scroll";
 
 export default function Intro() {
   return (
@@ -12,9 +12,17 @@ export default function Intro() {
         Заработок в Instagram на навыке создания рекламных макетов и stop-motion
         . Если ты еще не с нами, тогда чего же ты ждешь?
       </h1>
-      <button type="button" className="join-button btn btn-warning">
-        ПРИСОЕДИНИТЬСЯ
-      </button>
+      <Link
+        style={{ width: "100%", display: "flex", justifyContent: "center" }}
+        to="experts"
+        activeClass="active"
+        smooth={true}
+        duration={1000}
+      >
+        <button type="button" className="join-button btn btn-warning">
+          ПРИСОЕДИНИТЬСЯ
+        </button>
+      </Link>
     </div>
   );
 }

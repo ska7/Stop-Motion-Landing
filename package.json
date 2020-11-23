@@ -16,6 +16,7 @@
     "react-elastic-carousel": "^0.9.5",
     "react-scripts": "4.0.0",
     "react-scroll": "^1.8.1",
+    "react-simple-tooltip": "^2.6.2",
     "sass": "^1.29.0",
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"

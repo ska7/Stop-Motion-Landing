@@ -1,5 +1,13 @@
 import React, { useEffect } from "react";
 import adIcon from "../img/icons/ad-solid.svg";
+import monetize from "../img/icons/monetize.png";
+import earn from "../img/icons/earn.png";
+import instagram from "../img/icons/instagram.png";
+import editing from "../img/icons/editing.png";
+import portfolio from "../img/icons/portfolio.png";
+import newsubs from "../img/icons/newsubs.png";
+import stopmotion from "../img/icons/stopmotion.png";
+import targetAudience from "../img/icons/target-audience.png";
 import bullhornIcon from "../img/icons/bullhorn-solid.svg";
 import lightbulbIcon from "../img/icons/lightbulb-solid.svg";
 import commentDollarIcon from "../img/icons/comment-dollar-solid.svg";
@@ -42,11 +50,11 @@ export default function CourseInfo() {
       <div className="benefits-list">
         <h1>После курса ты:</h1>
         <span data-aos="slide-left" className="benefit">
-          <img src={""}></img>
+          <img src={monetize}></img>
           <b> Обретешь навык, который ты сможешь монетизировать </b>
         </span>
         <span data-aos="slide-right" className="benefit">
-          <img src={""}></img>
+          <img src={earn}></img>
           <b>Заработаешь свои первые деньги на фрилансе</b>
         </span>
         <span data-aos="slide-left" className="benefit">
@@ -54,7 +62,7 @@ export default function CourseInfo() {
           <b> Поднимешь прайс на свои услуги</b>
         </span>
         <span data-aos="slide-right" className="benefit">
-          <img src={""}></img>
+          <img src={targetAudience}></img>
           <b>Будешь знать как удержать внимание аудитории</b>
         </span>
         <span data-aos="slide-right" className="benefit">
@@ -62,7 +70,7 @@ export default function CourseInfo() {
           <b>Точно будешь знать где и как найти клиента</b>
         </span>
         <span data-aos="slide-right" className="benefit">
-          <img src={""}></img>
+          <img src={instagram}></img>
           <b>
             Построишь личный бренд и выстроишь систему из своего профиля в
             Instagram, который станет приносить тебе клиентов постоянно [ на
@@ -73,27 +81,27 @@ export default function CourseInfo() {
           </b>
         </span>
         <span data-aos="slide-right" className="benefit">
-          <img src={""}></img>
+          <img src={editing}></img>
           <b>
             Научишься делать крутой монтаж, который пригодится для создания
             макетов и сторис
           </b>
         </span>
         <span data-aos="slide-right" className="benefit">
-          <img src={""}></img>
+          <img src={stopmotion}></img>
           <b>
             Освоишь навык создания набирающей популярность анимации stop-motion
           </b>
         </span>
         <span data-aos="slide-right" className="benefit">
-          <img src={""}></img>
+          <img src={newsubs}></img>
           <b>
             Узнаешь как делать кликабельные рекламные макеты, которые будут
             досматривать и привлекать новых подписчиков.
           </b>
         </span>
         <span data-aos="slide-right" className="benefit">
-          <img src={""}></img>
+          <img src={portfolio}></img>
           <b>
             Уже во время курса ты соберешь портфолио, что упростит поиск клиента
             и отразит твои умения

@@ -185,6 +185,7 @@ $app-yellow: rgb(255, 193, 7);
     }
   }
   .benefits-list {
+    width: 100%;
     h1 {
       text-align: center;
       font-weight: 1000;
@@ -193,6 +194,7 @@ $app-yellow: rgb(255, 193, 7);
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
       padding: 20px;
+      width: 100%;
       color: rgb(48, 48, 48);
     }
     display: flex;
@@ -342,6 +344,7 @@ $app-yellow: rgb(255, 193, 7);
     // border: 1px solid black;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 40px;
     img {
       min-height: 250px;
       width: 100%;
@@ -444,18 +447,72 @@ $app-yellow: rgb(255, 193, 7);
       content: "⊱";
     }
   }
+  .yandex {
+    padding: 20px;
+    .yandex-buttons {
+      margin: 25px;
+      pointer-events: none;
+    }
+    h4 {
+      font-size: 5px;
+      margin: 20px;
+      // width: 100%;
+    }
+  }
+}
+
+// Reviews Section
+
+.reviews-section {
+  height: auto;
+  width: 100%;
+  background: $app-yellow;
+  font-family: $main-font;
+  @include center;
+
+  h1 {
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .review-picture {
+    max-height: 400px;
+    max-width: 100%;
+  }
 }
 
 // Corusel
 
-.btn-warning {
-  animation: pulse-orange 2s infinite forwards;
-  font-family: $main-font;
-}
-
-.rec-carousel-item {
+.rec.rec-carousel-item {
   outline: none;
   // box-shadow: inset 0 0 1px 0px violet;
+}
+
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+
+.rec.rec-arrow {
+  position: absolute;
+  z-index: 1;
+}
+
+.rec.rec-arrow-right {
+  right: 0;
+}
+
+.rec.rec-dot {
+  background-color: $app-yellow;
+  // box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.rec-carousel-item:focus {
+  outline: none;
 }
 
 // Animation
