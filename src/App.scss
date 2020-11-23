@@ -481,7 +481,7 @@ $app-yellow: rgb(255, 193, 7);
   }
   .review-picture {
     height: auto;
-    width: auto;
+    max-width: 100%;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
