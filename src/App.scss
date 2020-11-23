@@ -32,7 +32,18 @@ $app-yellow: rgb(255, 193, 7);
     font-family: $main-font;
   }
   .prices-section {
+    position: relative;
     width: 480px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .reviews-section,
+  .program-section,
+  .experts-section,
+  .course-info-section {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
   }
 }
 
