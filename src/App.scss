@@ -480,14 +480,18 @@ $app-yellow: rgb(255, 193, 7);
     font-weight: 800;
   }
   .review-picture {
-    max-height: 400px;
-    max-width: 100%;
+    height: auto;
+    width: auto;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
   }
+  // .card1 {
+  //   height: auto;
+  //   width
+  // }
 }
 
 // Corusel
