@@ -10,6 +10,7 @@ import {
   lessonsBlockTwo,
 } from "./lessons";
 import ProgramBlock from "./ProgramBlock";
+import ProgramBlockMentor from "./ProgramBlockMentor";
 
 export default function Program() {
   return (
@@ -30,7 +31,7 @@ export default function Program() {
         blockName="БЛОК 3: ПОИСК ЗАКАЗОВ И РАБОТА С КЛИЕНТОМ "
         lessons={lessonsBlockThree}
       />
-      <ProgramBlock
+      <ProgramBlockMentor
         icon={mentorshipIcon}
         blockName="МЕНТОРСТВО"
         lessons={lessonsBlockFour}

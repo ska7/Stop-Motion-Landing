@@ -13,7 +13,7 @@ export const lessonsBlockOne = [
 
 export const lessonsBlockTwo = [
   `Ошибки в анимации : 
-    • расчлененка             
+    • то, что портит результат             
     • длина кадра
     • качество исходника
     Вдохновение :

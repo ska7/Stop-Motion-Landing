@@ -8,6 +8,7 @@ export default function PriceCard({
   mentor,
   id,
   individual,
+  secondPart,
 }) {
   const priceStyle = {
     textDecoration: "line-through",
@@ -21,6 +22,9 @@ export default function PriceCard({
     color: "black",
     marginBottom: "20px",
     width: "auto",
+  };
+  const h4Style = {
+    textAlign: "left",
   };
   const mentorStyle = {
     background: "purple",
@@ -64,6 +68,29 @@ export default function PriceCard({
             return <li key={i}> ❧&nbsp;{item}</li>;
           })}
         </ul>
+        {secondPart && (
+          <React.Fragment>
+            {" "}
+            <h3
+              style={{
+                marginLeft: "0",
+                textAlign: "left",
+                fontSize: "20px",
+                borderBottom: "1px solid black",
+                borderRadius: "15px",
+                padding: "10px",
+                boxShadow: "0 0 10px black",
+              }}
+            >
+              4 созвона :
+            </h3>
+            <ul>
+              {secondPart.map((item, i) => {
+                return <li key={i}> ❧&nbsp;{item}</li>;
+              })}
+            </ul>
+          </React.Fragment>
+        )}
       </div>
     </div>
   );

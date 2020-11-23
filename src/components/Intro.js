@@ -14,7 +14,7 @@ export default function Intro() {
       </h1>
       <Link
         style={{ width: "100%", display: "flex", justifyContent: "center" }}
-        to="experts"
+        to="prices"
         activeClass="active"
         smooth={true}
         duration={1000}

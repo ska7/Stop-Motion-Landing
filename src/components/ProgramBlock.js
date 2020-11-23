@@ -29,7 +29,7 @@ export default function ProgramBlock({ icon, blockName, lessons }) {
                       style={titleStyle}
                       className="long-lesson"
                     >{`Ошибки в анимации:`}</b>
-                    <b className="long-lesson">{`• расчлененка`}</b>
+                    <b className="long-lesson">{`• что портит результат`}</b>
                     <b className="long-lesson">{`• длина кадра`}</b>
                     <b className="long-lesson">{`• качество исходника`}</b>
                     <b

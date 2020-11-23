@@ -4,7 +4,14 @@ import Timer from "./Timer";
 import Carousel from "react-elastic-carousel";
 import Tooltip from "react-simple-tooltip";
 import { css } from "styled-components";
-import { firstTarrif, secondTarrif, thirdTarrif } from "./tarrif-features";
+import {
+  firstTarrif,
+  fourthTarrif,
+  secondPart,
+  secondTarrif,
+  thirdTarrif,
+  ThirdTarrifSecondPart,
+} from "./tarrif-features";
 
 export default function Prices() {
   const tooltip = `Бронь места на любой из тарифов — закрепляет за вами место и цену, по которой вы оплатили. Бронь тарифа является частичной оплатой места, то есть остальная оплата — стоимость по тарифу минус бронь.
@@ -122,6 +129,7 @@ export default function Prices() {
             secondPrice={"10990₽"}
             thirdPrice={"11990₽ "}
             features={thirdTarrif}
+            secondPart={secondPart}
             mentor={true}
             id={3}
           />
@@ -165,7 +173,8 @@ export default function Prices() {
         <div style={center}>
           <PriceCard
             firstPrice={"25000₽"}
-            features={thirdTarrif}
+            features={fourthTarrif}
+            secondPart={secondPart}
             individual={true}
             id={4}
           />
