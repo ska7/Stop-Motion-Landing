@@ -473,11 +473,10 @@ $app-yellow: rgb(255, 193, 7);
       padding-top: 8px;
       color: $app-yellow;
     }
-    h1:after {
-      content: "⊰";
-    }
-    h1:before {
-      content: "⊱";
+    h1,
+    h2 {
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
   .yandex {
@@ -497,6 +496,7 @@ $app-yellow: rgb(255, 193, 7);
 // Reviews Section
 
 .reviews-section {
+  position: relative;
   height: auto;
   max-width: 480px;
   background: $app-yellow;

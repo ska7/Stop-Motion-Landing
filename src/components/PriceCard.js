@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export default function PriceCard({
   firstPrice,
@@ -46,7 +46,7 @@ export default function PriceCard({
   };
 
   return (
-    <div className={`price-card price-card${id}`}>
+    <div id={`price-card${id}`} className={`price-card`}>
       <div style={center}>
         <div className="prices-block">
           {individual ? (

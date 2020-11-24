@@ -14,6 +14,7 @@ import commentDollarIcon from "../img/icons/comment-dollar-solid.svg";
 import studentsIcon from "../img/icons/education.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-scroll";
 
 export default function CourseInfo() {
   useEffect(() => {
@@ -75,8 +76,26 @@ export default function CourseInfo() {
             Построишь личный бренд и выстроишь систему из своего профиля в
             Instagram, который станет приносить тебе клиентов постоянно [ на
             тарифе &nbsp;
-            <span style={{ color: "rgb(255, 193, 7)" }}>«Менторство» </span> и
-            <span style={{ color: "rgb(255, 193, 7)" }}> «Индивидуальный»</span>{" "}
+            <Link
+              to="price-card2"
+              duration="1000"
+              activeClass="active"
+              smooth={true}
+              style={{ color: "rgb(255, 193, 7)" }}
+            >
+              «Менторство»{" "}
+            </Link>{" "}
+            и
+            <Link
+              to="price-card3"
+              duration="1000"
+              activeClass="active"
+              smooth={true}
+              style={{ color: "rgb(255, 193, 7)" }}
+            >
+              {" "}
+              «Индивидуальный»
+            </Link>{" "}
             ]
           </b>
         </span>

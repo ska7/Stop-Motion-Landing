@@ -28,6 +28,10 @@ export default function ProgramBlockMentor({ icon, blockName, lessons }) {
             4 СОЗВОНА :
           </b>
           <b className="lesson">
+            • С чего начать вести экспертный блог? Упаковка, концепция, разбор
+            ошибок{" "}
+          </b>
+          <b className="lesson">
             • Как строить личный бренд? Смыслы, ценности{" "}
           </b>
           <b className="lesson">

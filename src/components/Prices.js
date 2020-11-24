@@ -29,7 +29,10 @@ export default function Prices() {
         Тарифы
       </h1>
       <Timer />
-      <Carousel itemPadding={[100, 100, 100, 100]}>
+      <Carousel
+        itemPadding={[100, 100, 100, 100]}
+        // initialActiveIndex={activeIndex}
+      >
         <div style={center}>
           <PriceCard
             firstPrice={"1290₽"}
@@ -52,11 +55,11 @@ export default function Prices() {
                 font-family: "Montserrat", sans-serif;
               `}
             >
-              <h4>Предоплата&nbsp;❔</h4>
+              <h4>Бронь&nbsp;❔</h4>
             </Tooltip>
             <iframe
               // className="yandex-buttons"
-              src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=&quickpay=small&account=410014822462996&"
+              src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
               title="yandex"
@@ -71,15 +74,6 @@ export default function Prices() {
               height="36"
               title="yandex"
               frameBorder="1"
-              allowtransparency="true"
-              scrolling="no"
-            ></iframe>
-            <h4>ЛИНКА ДЛЯ ТЕСТА</h4>
-            <iframe
-              src="https://yoomoney.ru/quickpay/button-widget?targets=проверка&default-sum=2&button-text=11&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410014822462996&"
-              width="184"
-              height="36"
-              frameBorder="0"
               allowtransparency="true"
               scrolling="no"
             ></iframe>
@@ -107,11 +101,11 @@ export default function Prices() {
                 font-family: "Montserrat", sans-serif;
               `}
             >
-              <h4>Предоплата&nbsp;❔</h4>
+              <h4>Бронь&nbsp;❔</h4>
             </Tooltip>
             <iframe
               className="yandex-buttons"
-              src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=&quickpay=small&account=410014822462996&"
+              src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
               title="yandex"
@@ -155,12 +149,12 @@ export default function Prices() {
                 font-family: "Montserrat", sans-serif;
               `}
             >
-              <h4>Предоплата&nbsp;❔</h4>
+              <h4>Бронь&nbsp;❔</h4>
             </Tooltip>
 
             <iframe
               className="yandex-buttons"
-              src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=&quickpay=small&account=410014822462996&"
+              src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
               frameBorder="1"
@@ -202,12 +196,12 @@ export default function Prices() {
                 font-family: "Montserrat", sans-serif;
               `}
             >
-              <h4>Предоплата&nbsp;❔</h4>
+              <h4>Бронь&nbsp;❔</h4>
             </Tooltip>
 
             <iframe
               className="yandex-buttons"
-              src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=&quickpay=small&account=410014822462996&"
+              src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
               frameBorder="1"
@@ -217,7 +211,7 @@ export default function Prices() {
             ></iframe>
             <h4>Оплатить полностью</h4>
             <iframe
-              src="https://yoomoney.ru/quickpay/button-widget?targets=четвертый тариф индивид&default-sum=12500&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410014822462996&"
+              src="https://yoomoney.ru/quickpay/button-widget?targets=четвертый тариф индивид&default-sum=12500&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
               frameBorder="1"
