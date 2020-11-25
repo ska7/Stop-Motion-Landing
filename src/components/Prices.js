@@ -55,7 +55,9 @@ export default function Prices() {
                 font-family: "Montserrat", sans-serif;
               `}
             >
-              <h4>Бронь&nbsp;❔</h4>
+              <h4>
+                Бронь&nbsp;<span className="question-mark">?</span>
+              </h4>
             </Tooltip>
             <iframe
               // className="yandex-buttons"
@@ -101,7 +103,9 @@ export default function Prices() {
                 font-family: "Montserrat", sans-serif;
               `}
             >
-              <h4>Бронь&nbsp;❔</h4>
+              <h4>
+                Бронь&nbsp;<span className="question-mark">?</span>
+              </h4>
             </Tooltip>
             <iframe
               className="yandex-buttons"
@@ -149,7 +153,9 @@ export default function Prices() {
                 font-family: "Montserrat", sans-serif;
               `}
             >
-              <h4>Бронь&nbsp;❔</h4>
+              <h4>
+                Бронь&nbsp;<span className="question-mark">?</span>
+              </h4>
             </Tooltip>
 
             <iframe
@@ -196,7 +202,9 @@ export default function Prices() {
                 font-family: "Montserrat", sans-serif;
               `}
             >
-              <h4>Бронь&nbsp;❔</h4>
+              <h4>
+                Бронь&nbsp;<span className="question-mark">?</span>
+              </h4>
             </Tooltip>
 
             <iframe
