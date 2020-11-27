@@ -9,6 +9,7 @@ export default function PriceCard({
   id,
   individual,
   secondPart,
+  guides,
 }) {
   const priceStyle = {
     textDecoration: "line-through",
@@ -23,8 +24,14 @@ export default function PriceCard({
     marginBottom: "20px",
     width: "auto",
   };
-  const h4Style = {
-    textAlign: "left",
+  const h3Style = {
+    textAlign: "center",
+    fontSize: "20px",
+    borderBottom: "1px solid black",
+    borderRadius: "15px",
+    padding: "10px",
+    width: "70%",
+    boxShadow: "0 0 10px black",
   };
   const mentorStyle = {
     background: "purple",
@@ -67,23 +74,18 @@ export default function PriceCard({
           {features.map((item, i) => {
             return <li key={i}> ❧&nbsp;{item}</li>;
           })}
+          {mentor && (
+            <li>
+              ❧&nbsp; две группы по пять человек:{" "}
+              <strong>начинающие (с нуля) </strong> — 5 мест,{" "}
+              <strong>продолжающие </strong> — 5 мест
+            </li>
+          )}
         </ul>
         {secondPart && (
           <React.Fragment>
             {" "}
-            <h3
-              style={{
-                marginLeft: "0",
-                textAlign: "left",
-                fontSize: "20px",
-                borderBottom: "1px solid black",
-                borderRadius: "15px",
-                padding: "10px",
-                boxShadow: "0 0 10px black",
-              }}
-            >
-              4 созвона :
-            </h3>
+            <h3 style={h3Style}>4 созвона :</h3>
             <ul>
               {secondPart.map((item, i) => {
                 return <li key={i}> ❧&nbsp;{item}</li>;
@@ -91,6 +93,21 @@ export default function PriceCard({
             </ul>
           </React.Fragment>
         )}
+        <ul style={center}>
+          {guides && (
+            <React.Fragment>
+              <h3 style={h3Style}>3 чек-листа :</h3>
+              {guides.map((guide, i) => {
+                return (
+                  <li key={i} style={{ fontWeight: "1000" }}>
+                    {" "}
+                    ❧&nbsp;{guide}
+                  </li>
+                );
+              })}
+            </React.Fragment>
+          )}
+        </ul>
       </div>
     </div>
   );

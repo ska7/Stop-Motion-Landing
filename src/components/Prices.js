@@ -7,6 +7,7 @@ import { css } from "styled-components";
 import {
   firstTarrif,
   fourthTarrif,
+  guides,
   secondPart,
   secondTarrif,
   thirdTarrif,
@@ -86,6 +87,7 @@ export default function Prices() {
             firstPrice={"3990₽"}
             secondPrice={"4290₽"}
             thirdPrice={"4590₽"}
+            guides={guides}
             features={secondTarrif}
             id={2}
           />
@@ -136,6 +138,7 @@ export default function Prices() {
             thirdPrice={"11990₽ "}
             features={thirdTarrif}
             secondPart={secondPart}
+            guides={guides}
             mentor={true}
             id={3}
           />
@@ -186,10 +189,11 @@ export default function Prices() {
             features={fourthTarrif}
             secondPart={secondPart}
             individual={true}
+            guides={guides}
             id={4}
           />
 
-          <div className="yandex-buttons" style={center}>
+          <div className="yandex" style={center}>
             <Tooltip
               content={tooltip}
               background={"rgba(0,0,0, 0.9)"}

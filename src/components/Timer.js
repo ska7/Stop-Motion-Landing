@@ -6,7 +6,7 @@ export default function Timer() {
   const [minutes, setMinutes] = useState("");
   const [seconds, setSeconds] = useState("");
 
-  const countDownDate = new Date("Dec 4, 2020 15:37:25").getTime();
+  const countDownDate = new Date("Nov 28, 2020 13:00:00").getTime();
 
   // Update the count down every 1 second
   const setCountDown = setInterval(() => {
