@@ -6,7 +6,7 @@ export default function Timer() {
   const [minutes, setMinutes] = useState("");
   const [seconds, setSeconds] = useState("");
 
-  const countDownDate = new Date("Nov 28, 2020 13:00:00").getTime();
+  const countDownDate = new Date("Nov 29, 2020 24:00:00 GMT+3").getTime();
 
   // Update the count down every 1 second
   const setCountDown = setInterval(() => {
@@ -25,15 +25,14 @@ export default function Timer() {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Update state
-    setDays(days);
-    setHours(hours);
-    setMinutes(minutes);
-    setSeconds(seconds);
+    // setDays(days);
+    // setHours(hours);
+    // setMinutes(minutes);
+    // setSeconds(seconds);
 
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(setCountDown);
-      // document.getElementById("demo").innerHTML = "EXPIRED";
     }
   }, 1000);
 
@@ -63,6 +62,10 @@ export default function Timer() {
       if (distance < 0) {
         clearInterval(setCountDown);
         // document.getElementById("demo").innerHTML = "EXPIRED";
+        setDays(0);
+        setHours(0);
+        setMinutes(0);
+        setSeconds(0);
       }
     }, 1000);
   });

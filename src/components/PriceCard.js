@@ -1,4 +1,5 @@
 import React from "react";
+import PaymentForm from "./PaymentForm";
 
 export default function PriceCard({
   firstPrice,
@@ -53,62 +54,65 @@ export default function PriceCard({
   };
 
   return (
-    <div id={`price-card${id}`} className={`price-card`}>
-      <div style={center}>
-        <div className="prices-block">
-          {individual ? (
+    <React.Fragment>
+      <div id={`price-card${id}`} className={`price-card`}>
+        <div style={center}>
+          <div className="prices-block">
+            {individual ? (
+              <React.Fragment>
+                <h1>{firstPrice}</h1>
+                <h2 style={mentorStyle}>ИНДИВИДУАЛЬНАЯ РАБОТА</h2>
+              </React.Fragment>
+            ) : (
+              <React.Fragment>
+                <h3 style={priceStyle}>{`${thirdPrice}${"₽"}`}</h3>
+
+                <h1 style={h1Style}>{`${secondPrice}${"₽"}`}</h1>
+              </React.Fragment>
+            )}
+            {mentor && <h2 style={mentorStyle}>МЕНТОРСТВО</h2>}
+          </div>
+          <ul>
+            {features.map((item, i) => {
+              return <li key={i}> ❧&nbsp;{item}</li>;
+            })}
+            {mentor && (
+              <li>
+                ❧&nbsp; две группы по пять человек:{" "}
+                <strong>начинающие (с нуля) </strong> — 5 мест,{" "}
+                <strong>продолжающие </strong> — 5 мест
+              </li>
+            )}
+          </ul>
+          {secondPart && (
             <React.Fragment>
-              <h1>{firstPrice}</h1>
-              <h2 style={mentorStyle}>ИНДИВИДУАЛЬНАЯ РАБОТА</h2>
-            </React.Fragment>
-          ) : (
-            <React.Fragment>
-              <h3 style={priceStyle}>{thirdPrice}</h3>
-              <h2 style={priceStyle}>{secondPrice}</h2>
-              <h1 style={h1Style}>{firstPrice}</h1>
+              {" "}
+              <h3 style={h3Style}>4 созвона :</h3>
+              <ul>
+                {secondPart.map((item, i) => {
+                  return <li key={i}> ❧&nbsp;{item}</li>;
+                })}
+              </ul>
             </React.Fragment>
           )}
-          {mentor && <h2 style={mentorStyle}>МЕНТОРСТВО</h2>}
+          <ul style={center}>
+            {guides && (
+              <React.Fragment>
+                <h3 style={h3Style}>3 чек-листа :</h3>
+                {guides.map((guide, i) => {
+                  return (
+                    <li key={i} style={{ fontWeight: "1000" }}>
+                      {" "}
+                      ❧&nbsp;{guide}
+                    </li>
+                  );
+                })}
+              </React.Fragment>
+            )}
+          </ul>
         </div>
-        <ul>
-          {features.map((item, i) => {
-            return <li key={i}> ❧&nbsp;{item}</li>;
-          })}
-          {mentor && (
-            <li>
-              ❧&nbsp; две группы по пять человек:{" "}
-              <strong>начинающие (с нуля) </strong> — 5 мест,{" "}
-              <strong>продолжающие </strong> — 5 мест
-            </li>
-          )}
-        </ul>
-        {secondPart && (
-          <React.Fragment>
-            {" "}
-            <h3 style={h3Style}>4 созвона :</h3>
-            <ul>
-              {secondPart.map((item, i) => {
-                return <li key={i}> ❧&nbsp;{item}</li>;
-              })}
-            </ul>
-          </React.Fragment>
-        )}
-        <ul style={center}>
-          {guides && (
-            <React.Fragment>
-              <h3 style={h3Style}>3 чек-листа :</h3>
-              {guides.map((guide, i) => {
-                return (
-                  <li key={i} style={{ fontWeight: "1000" }}>
-                    {" "}
-                    ❧&nbsp;{guide}
-                  </li>
-                );
-              })}
-            </React.Fragment>
-          )}
-        </ul>
       </div>
-    </div>
+      <PaymentForm secondPrice={2} />
+    </React.Fragment>
   );
 }
