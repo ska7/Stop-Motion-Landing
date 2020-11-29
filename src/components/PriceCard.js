@@ -112,7 +112,7 @@ export default function PriceCard({
           </ul>
         </div>
       </div>
-      <PaymentForm secondPrice={2} />
+      {/* <PaymentForm secondPrice={2} /> */}
     </React.Fragment>
   );
 }

@@ -620,6 +620,17 @@ $app-yellow: rgb(255, 193, 7);
   }
 }
 
+// REMOVE LATER
+.question-mark {
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: 500;
+  border-radius: 25%;
+  margin-right: 5px;
+  background: rgb(61, 61, 61);
+  color: white;
+}
+
 // Animation
 
 @keyframes pulse-orange {
