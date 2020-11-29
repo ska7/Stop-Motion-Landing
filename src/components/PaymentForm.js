@@ -31,6 +31,7 @@ export default function PaymentForm({ secondPrice }) {
 
   const [state, setState] = useState("");
   const [active, setActive] = useState("cc");
+  const [charge, setCharge] = useState(secondPrice);
 
   return (
     <React.Fragment>
@@ -58,12 +59,7 @@ export default function PaymentForm({ secondPrice }) {
             name="targets"
             value="курс Stop-motion and Креативы "
           />{" "}
-          <input
-            type="hidden"
-            name="sum"
-            value={secondPrice}
-            data-type="number"
-          />{" "}
+          <input type="hidden" name="sum" value={charge} data-type="number" />{" "}
           <input type="hidden" name="comment" value={state} />{" "}
           <input type="hidden" name="need-fio" value="false" />{" "}
           <input type="hidden" name="need-email" value="false" />{" "}
@@ -71,7 +67,7 @@ export default function PaymentForm({ secondPrice }) {
           <input type="hidden" name="need-address" value="false" />{" "}
           <div style={centerColumn}>
             <label style={{ textAlign: "center" }} for="comment-area">
-              Введи сюда свой ник в Telegram/Instagram{" "}
+              Введи сюда свой ник в Telegram или Instagram{" "}
             </label>
             <input
               autoComplete="off"
@@ -82,9 +78,9 @@ export default function PaymentForm({ secondPrice }) {
               type="text"
               name="comment-area"
             ></input>
-            <h4>Выбери способ оплаты</h4>
+            {/* <h4>Выбери способ оплаты</h4> */}
           </div>
-          <div style={center}>
+          {/* <div style={center}>
             <div style={centerColumn}>
               <label
                 style={{
@@ -134,7 +130,15 @@ export default function PaymentForm({ secondPrice }) {
                 src={creditCardIcon}
               ></img>
             </div>
-          </div>
+          </div> */}
+          <input
+            style={{ appearance: "none" }}
+            type="radio"
+            name="paymentType"
+            value="AC"
+            id="AC"
+            checked="true"
+          />
           <Tooltip
             content={tooltip}
             background={"rgba(0,0,0, 0.9)"}
@@ -155,34 +159,9 @@ export default function PaymentForm({ secondPrice }) {
           <div className="payment-buttons" style={center}>
             <input className="payment-button" type="submit" value="Оплатить" />
           </div>
-        </form>
-        <form method="POST" action="https://yoomoney.ru/quickpay/confirm.xml">
-          <input type="hidden" name="receiver" value="410014822462996" /> //{" "}
-          <input
-            type="hidden"
-            name="formcomment"
-            value={`Курс 'Stop Motion and Креативы'`}
-          />{" "}
-          <input
-            type="hidden"
-            name="short-dest"
-            value={`Курс 'Stop Motion and Креативы'`}
-          />{" "}
-          <input type="hidden" name="label" value="$order_id" />{" "}
-          <input type="hidden" name="quickpay-form" value="shop" />{" "}
-          <input
-            type="hidden"
-            name="targets"
-            value="курс Stop-motion and Креативы "
-          />{" "}
-          <input type="hidden" name="sum" value="1000" data-type="number" />{" "}
-          <input required type="hidden" name="comment" value={state} />{" "}
-          <input type="hidden" name="need-fio" value="false" />{" "}
-          <input type="hidden" name="need-email" value="false" />{" "}
-          <input type="hidden" name="need-phone" value="false" />{" "}
-          <input type="hidden" name="need-address" value="false" />{" "}
           <div className="payment-buttons" style={center}>
             <input
+              onClick={() => setCharge(1000)}
               className="payment-button"
               type="submit"
               value="Забронировать"

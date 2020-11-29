@@ -7,6 +7,7 @@ import { css } from "styled-components";
 import {
   firstTarrif,
   fourthTarrif,
+  guides,
   secondPart,
   secondTarrif,
   thirdTarrif,
@@ -29,17 +30,27 @@ export default function Prices() {
       <Timer />
       <Carousel
         itemPadding={[100, 100, 100, 100]}
-        // initialActiveIndex={activeIndex}
+        autoTabIndexVisibleItems={false}
       >
-        <div style={center}>
-          <PriceCard
-            firstPrice={"1290"}
-            secondPrice={"1690"}
-            thirdPrice={"1990"}
-            features={firstTarrif}
-            id={1}
-          />
-          <div className="yandex" style={center}>
+        {/* <div style={center}> */}
+        <PriceCard
+          firstPrice={"1290"}
+          secondPrice={"1690"}
+          thirdPrice={"1990"}
+          features={firstTarrif}
+          id={1}
+        />
+        {/* <div className="yandex" style={center}>
+            <h4>Оплатить полностью</h4>
+            <iframe
+              src="https://yoomoney.ru/quickpay/button-widget?targets=первый тариф&default-sum=1290&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
+              width="184"
+              height="36"
+              title="yandex"
+              frameBorder="1"
+              allowtransparency="true"
+              scrolling="no"
+            ></iframe>
             <Tooltip
               content={tooltip}
               background={"rgba(0,0,0, 0.9)"}
@@ -67,54 +78,18 @@ export default function Prices() {
               allowtransparency="false"
               scrolling="no"
             ></iframe>
-            <h4>Оплатить полностью</h4>
-            <iframe
-              src="https://yoomoney.ru/quickpay/button-widget?targets=первый тариф&default-sum=1290&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
-              width="184"
-              height="36"
-              title="yandex"
-              frameBorder="1"
-              allowtransparency="true"
-              scrolling="no"
-            ></iframe>
           </div>
-        </div>
-        <div style={center}>
-          <PriceCard
-            firstPrice={"3990"}
-            secondPrice={"4290"}
-            thirdPrice={"4590"}
-            features={secondTarrif}
-            id={2}
-          />
-          <div className="yandex" style={center}>
-            <Tooltip
-              content={tooltip}
-              background={"rgba(0,0,0, 0.9)"}
-              radius={15}
-              color={"rgb(255, 193, 7)"}
-              customCss={css`
-                // white-space: break-spaces;
-                font-size: 10px;
-                text-align: center;
-                width: 400px;
-                font-family: "Montserrat", sans-serif;
-              `}
-            >
-              <h4>
-                Бронь&nbsp;<span className="question-mark">?</span>
-              </h4>
-            </Tooltip>
-            <iframe
-              className="yandex-buttons"
-              src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
-              width="184"
-              height="36"
-              title="yandex"
-              frameBorder="1"
-              allowtransparency="true"
-              scrolling="no"
-            ></iframe>
+        </div> */}
+        {/* <div style={center}> */}
+        <PriceCard
+          firstPrice={"3990"}
+          secondPrice={"4290"}
+          thirdPrice={"4590"}
+          features={secondTarrif}
+          guides={guides}
+          id={2}
+        />
+        {/* <div className="yandex" style={center}>
             <h4>Оплатить полностью</h4>
             <iframe
               src="https://yoomoney.ru/quickpay/button-widget?targets=первый тариф&default-sum=3990&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
@@ -125,19 +100,57 @@ export default function Prices() {
               allowtransparency="true"
               scrolling="no"
             ></iframe>
+            <Tooltip
+              content={tooltip}
+              background={"rgba(0,0,0, 0.9)"}
+              radius={15}
+              color={"rgb(255, 193, 7)"}
+              customCss={css`
+                // white-space: break-spaces;
+                font-size: 10px;
+                text-align: center;
+                width: 400px;
+                font-family: "Montserrat", sans-serif;
+              `}
+            >
+              <h4>
+                Бронь&nbsp;<span className="question-mark">?</span>
+              </h4>
+            </Tooltip>
+            <iframe
+              className="yandex-buttons"
+              src="https://yoomoney.ru/quickpay/button-widget?targets=предоплата&default-sum=1000&button-text=12&any-card-payment-type=on&button-size=m&button-color=black&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
+              width="184"
+              height="36"
+              title="yandex"
+              frameBorder="1"
+              allowtransparency="true"
+              scrolling="no"
+            ></iframe>
           </div>
-        </div>
-        <div style={center}>
-          <PriceCard
-            firstPrice={"9990"}
-            secondPrice={"10990"}
-            thirdPrice={"11990 "}
-            features={thirdTarrif}
-            secondPart={secondPart}
-            mentor={true}
-            id={3}
-          />
-          <div className="yandex" style={center}>
+        </div> */}
+        {/* <div style={center}> */}
+        <PriceCard
+          firstPrice={"9990"}
+          secondPrice={"10990"}
+          thirdPrice={"11990 "}
+          features={thirdTarrif}
+          secondPart={secondPart}
+          guides={guides}
+          mentor={true}
+          id={3}
+        />
+        {/* <div className="yandex" style={center}>
+            <h4>Оплатить полностью</h4>
+            <iframe
+              src="https://yoomoney.ru/quickpay/button-widget?targets=первый тариф&default-sum=9990&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
+              width="184"
+              height="36"
+              frameBorder="1"
+              title="yandex"
+              allowtransparency="true"
+              scrolling="no"
+            ></iframe>
             <Tooltip
               content={tooltip}
               background={"rgba(0,0,0, 0.9)"}
@@ -166,9 +179,22 @@ export default function Prices() {
               allowtransparency="true"
               scrolling="no"
             ></iframe>
+          </div>
+        </div> */}
+        {/* <div className="yandex" style={center}> */}
+        <PriceCard
+          firstPrice={"25000"}
+          features={fourthTarrif}
+          secondPart={secondPart}
+          guides={guides}
+          individual={true}
+          id={4}
+        />
+        {/* <div style={center}>
             <h4>Оплатить полностью</h4>
             <iframe
-              src="https://yoomoney.ru/quickpay/button-widget?targets=первый тариф&default-sum=9990&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
+              // className="yandex-buttons"
+              src="https://yoomoney.ru/quickpay/button-widget?targets=четвертый тариф индивид&default-sum=12500&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
               width="184"
               height="36"
               frameBorder="1"
@@ -176,17 +202,6 @@ export default function Prices() {
               allowtransparency="true"
               scrolling="no"
             ></iframe>
-          </div>
-        </div>
-        <div style={center}>
-          <PriceCard
-            firstPrice={"25000"}
-            features={fourthTarrif}
-            secondPart={secondPart}
-            individual={true}
-            id={4}
-          />
-          <div className="yandex-buttons" style={center}>
             <Tooltip
               content={tooltip}
               background={"rgba(0,0,0, 0.9)"}
@@ -214,18 +229,8 @@ export default function Prices() {
               allowtransparency="true"
               scrolling="no"
             ></iframe>
-            <h4>Оплатить полностью</h4>
-            <iframe
-              src="https://yoomoney.ru/quickpay/button-widget?targets=четвертый тариф индивид&default-sum=12500&button-text=12&any-card-payment-type=on&button-size=m&button-color=orange&successURL=https://kurs-stop-motion.tutdomen.com/&quickpay=small&account=410014822462996&"
-              width="184"
-              height="36"
-              frameBorder="1"
-              title="yandex"
-              allowtransparency="true"
-              scrolling="no"
-            ></iframe>
           </div>
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );

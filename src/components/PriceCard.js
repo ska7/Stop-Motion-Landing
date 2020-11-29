@@ -54,7 +54,7 @@ export default function PriceCard({
   };
 
   return (
-    <React.Fragment>
+    <div style={center}>
       <div id={`price-card${id}`} className={`price-card`}>
         <div style={center}>
           <div className="prices-block">
@@ -112,7 +112,7 @@ export default function PriceCard({
           </ul>
         </div>
       </div>
-      {/* <PaymentForm secondPrice={2} /> */}
-    </React.Fragment>
+      <PaymentForm secondPrice={2} />
+    </div>
   );
 }
