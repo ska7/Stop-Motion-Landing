@@ -435,6 +435,9 @@ $app-yellow: rgb(255, 193, 7);
       width: 100%;
     }
   }
+  .off {
+    display: none;
+  }
   .price-card {
     margin-top: 50px;
     min-height: 600px;

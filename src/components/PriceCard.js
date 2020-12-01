@@ -11,6 +11,7 @@ export default function PriceCard({
   individual,
   secondPart,
   guides,
+  timerOff,
 }) {
   const priceStyle = {
     textDecoration: "line-through",
@@ -60,14 +61,18 @@ export default function PriceCard({
           <div className="prices-block">
             {individual ? (
               <React.Fragment>
-                <h1>{firstPrice}</h1>
+                <h1>{`${firstPrice}${"₽"}`}</h1>
                 <h2 style={mentorStyle}>ИНДИВИДУАЛЬНАЯ РАБОТА</h2>
               </React.Fragment>
             ) : (
               <React.Fragment>
-                <h3 style={priceStyle}>{`${thirdPrice}${"₽"}`}</h3>
-
-                <h1 style={h1Style}>{`${secondPrice}${"₽"}`}</h1>
+                <h3 style={priceStyle}>{`${
+                  !timerOff ? `${thirdPrice}${"₽"}` : ""
+                }`}</h3>
+                {/* If the timer is off, the only price displayed should be the  */}
+                <h1 style={h1Style}>{`${
+                  timerOff ? thirdPrice : secondPrice
+                }${"₽"}`}</h1>
               </React.Fragment>
             )}
             {mentor && <h2 style={mentorStyle}>МЕНТОРСТВО</h2>}
@@ -112,7 +117,7 @@ export default function PriceCard({
           </ul>
         </div>
       </div>
-      <PaymentForm secondPrice={2} />
+      <PaymentForm secondPrice={!timerOff ? secondPrice : thirdPrice} />
     </div>
   );
 }

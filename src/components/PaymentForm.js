@@ -31,7 +31,7 @@ export default function PaymentForm({ secondPrice }) {
 
   const [state, setState] = useState("");
   const [active, setActive] = useState("cc");
-  const [charge, setCharge] = useState(secondPrice);
+  const [charge, setCharge] = useState("");
 
   return (
     <React.Fragment>
@@ -157,7 +157,12 @@ export default function PaymentForm({ secondPrice }) {
             <span className="question-mark">?</span>
           </Tooltip>
           <div className="payment-buttons" style={center}>
-            <input className="payment-button" type="submit" value="Оплатить" />
+            <input
+              className="payment-button"
+              type="submit"
+              value="Оплатить"
+              onClick={() => setCharge(secondPrice)}
+            />
           </div>
           <div className="payment-buttons" style={center}>
             <input
