@@ -3,7 +3,14 @@ import studentsIcon from "../img/icons/education.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-export default function CourseInfo({ types, benefits }) {
+type Benefit = object;
+
+export interface ICourseInfoProps {
+  types: [];
+  benefits: Array<any>;
+}
+
+const CourseInfo: React.FC<ICourseInfoProps> = ({ types, benefits }) => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
@@ -44,4 +51,6 @@ export default function CourseInfo({ types, benefits }) {
       </div>
     </div>
   );
-}
+};
+
+export default CourseInfo;
