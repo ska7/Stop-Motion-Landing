@@ -8,7 +8,12 @@ import Program from "./components/Program";
 import Experts from "./components/Experts";
 import Prices from "./components/Prices";
 import Reviews from "./components/Reviews";
-import { benefits, types } from "./components/benefitsAndTypes";
+import {
+  benefits,
+  expertsBio,
+  programInfo,
+  types,
+} from "./components/courseData";
 
 function App() {
   return (
@@ -16,8 +21,8 @@ function App() {
       <Navbar />
       <Intro />
       <CourseInfo types={types} benefits={benefits} />
-      <Program />
-      <Experts />
+      <Program program={programInfo} />
+      <Experts experts={expertsBio} />
       <Reviews />
       <Prices />
     </div>

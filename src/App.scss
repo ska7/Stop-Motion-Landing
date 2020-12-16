@@ -325,15 +325,21 @@ $app-yellow: rgb(255, 193, 7);
       width: 95%;
       b {
         color: white;
+        white-space: pre-wrap;
+        margin-top: 50px;
       }
-      .long-lesson:after {
-        content: "\A";
-        white-space: pre;
+      .title-style {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: rgb(255, 193, 7);
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: underline;
       }
       h2 {
         // Lesson Number
         padding: 5px;
-        // color: $app-yellow;
+        margin-bottom: 20px;
         color: rgb(255, 255, 255);
         font-family: $main-font;
         font-size: 25px;
@@ -347,7 +353,8 @@ $app-yellow: rgb(255, 193, 7);
         font-size: 20px;
         font-weight: 300;
         // text-shadow: 0 0 15px rgb(255, 255, 255);
-        max-width: 80%;
+        color: white;
+        width: 80%;
       }
 
       // Mentor Block

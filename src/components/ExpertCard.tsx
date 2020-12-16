@@ -1,6 +1,18 @@
-import React from "react";
+import * as React from "react";
 
-export default function ExpertCard({ picture, rank, name, bio }) {
+interface IExpertCardProps {
+  picture: string;
+  rank: string;
+  name: string;
+  bio: [];
+}
+
+const ExpertCard: React.FC<IExpertCardProps> = ({
+  picture,
+  rank,
+  name,
+  bio,
+}) => {
   return (
     <div className="expert-card" data-aos="flip-up">
       <img src={picture}></img>
@@ -13,4 +25,6 @@ export default function ExpertCard({ picture, rank, name, bio }) {
       </div>
     </div>
   );
-}
+};
+
+export default ExpertCard;

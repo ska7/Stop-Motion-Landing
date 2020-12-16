@@ -3,11 +3,14 @@ import studentsIcon from "../img/icons/education.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-type Benefit = object;
+interface Benefits {
+  image: string;
+  text: string;
+}
 
-export interface ICourseInfoProps {
-  types: [];
-  benefits: Array<any>;
+interface ICourseInfoProps {
+  types: string[];
+  benefits: Benefits[];
 }
 
 const CourseInfo: React.FC<ICourseInfoProps> = ({ types, benefits }) => {
