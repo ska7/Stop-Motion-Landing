@@ -222,6 +222,12 @@ $app-yellow: rgb(255, 193, 7);
   }
   .benefits-list {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    max-width: 100%;
     h1 {
       text-align: center;
       font-weight: 1000;
@@ -233,12 +239,6 @@ $app-yellow: rgb(255, 193, 7);
       width: 100%;
       color: rgb(48, 48, 48);
     }
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    max-width: 100%;
     .benefit {
       display: flex;
       flex-direction: column;

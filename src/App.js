@@ -8,13 +8,14 @@ import Program from "./components/Program";
 import Experts from "./components/Experts";
 import Prices from "./components/Prices";
 import Reviews from "./components/Reviews";
+import { benefits, types } from "./components/benefitsAndTypes";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Intro />
-      <CourseInfo />
+      <CourseInfo types={types} benefits={benefits} />
       <Program />
       <Experts />
       <Reviews />
