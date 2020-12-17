@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from "react";
 
-export default function Timer({
+interface ITimerProps {
+  distance?: number;
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+  timerOff?: boolean;
+}
+
+const Timer: React.FC<ITimerProps> = ({
   distance,
   days,
   hours,
   minutes,
   seconds,
   timerOff,
-}) {
+}) => {
   return (
     <div className={`timer ${timerOff && "off"}`}>
       <h2>До конца скидок </h2>
@@ -20,4 +29,6 @@ export default function Timer({
       >{`${days} : ${hours} : ${minutes} : ${seconds}`}</h1>
     </div>
   );
-}
+};
+
+export default Timer;

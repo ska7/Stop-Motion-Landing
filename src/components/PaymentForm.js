@@ -4,7 +4,7 @@ import walletIcon from "../img/icons/wallet.png";
 import Tooltip from "react-simple-tooltip";
 import { css } from "styled-components";
 
-export default function PaymentForm({ secondPrice }) {
+export default function PaymentForm({ price }) {
   const center = {
     display: "flex",
     flexDirection: "row",
@@ -78,59 +78,7 @@ export default function PaymentForm({ secondPrice }) {
               type="text"
               name="comment-area"
             ></input>
-            {/* <h4>Выбери способ оплаты</h4> */}
           </div>
-          {/* <div style={center}>
-            <div style={centerColumn}>
-              <label
-                style={{
-                  color: active === "wallet" ? "rgb(255, 193, 7)" : "white",
-                }}
-                for="paymentTypePC"
-              >
-                ЮMoney
-              </label>
-              <input
-                style={{ appearance: "none" }}
-                id="PC"
-                type="radio"
-                name="paymentType"
-                value="PC"
-                checked={active === "wallet" ? "true" : "false"}
-              />
-              <img
-                onClick={() => {
-                  setActive("wallet");
-                }}
-                src={walletIcon}
-              ></img>
-            </div>
-            <div style={centerColumn}>
-              <label
-                style={{
-                  color: active === "cc" ? "rgb(255, 193, 7)" : "white",
-                }}
-                for="paymentTypeAC"
-              >
-                Карта
-              </label>
-
-              <input
-                style={{ appearance: "none" }}
-                type="radio"
-                name="paymentType"
-                value="AC"
-                id="AC"
-                checked={active === "cc" ? "true" : "false"}
-              />
-              <img
-                onClick={() => {
-                  setActive("cc");
-                }}
-                src={creditCardIcon}
-              ></img>
-            </div>
-          </div> */}
           <input
             style={{ appearance: "none" }}
             type="radio"
@@ -161,7 +109,7 @@ export default function PaymentForm({ secondPrice }) {
               className="payment-button"
               type="submit"
               value="Оплатить"
-              onClick={() => setCharge(secondPrice)}
+              onClick={() => setCharge(price)}
             />
           </div>
           <div className="payment-buttons" style={center}>

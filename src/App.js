@@ -11,6 +11,7 @@ import Reviews from "./components/Reviews";
 import {
   benefits,
   expertsBio,
+  pricesInfo,
   programInfo,
   types,
 } from "./components/courseData";
@@ -24,7 +25,7 @@ function App() {
       <Program program={programInfo} />
       <Experts experts={expertsBio} />
       <Reviews />
-      <Prices />
+      <Prices priceCards={pricesInfo} />
     </div>
   );
 }

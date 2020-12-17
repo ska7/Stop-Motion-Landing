@@ -1,6 +1,16 @@
-import React from "react";
+import * as React from "react";
 
-export default function ProgramBlock({ icon, blockName, lessons }) {
+interface IProgramBlockProps {
+  icon: string;
+  blockName: string;
+  lessons: string[];
+}
+
+const ProgramBlock: React.FC<IProgramBlockProps> = ({
+  icon,
+  blockName,
+  lessons,
+}) => {
   return (
     <div>
       <h2 className="program-block">
@@ -21,4 +31,6 @@ export default function ProgramBlock({ icon, blockName, lessons }) {
       </div>
     </div>
   );
-}
+};
+
+export default ProgramBlock;
